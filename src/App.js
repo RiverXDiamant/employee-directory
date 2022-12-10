@@ -13,11 +13,11 @@ export default function App() {
   return (
     <div className="App">
       <Nav />
-      <h1>Darkplace Hospital</h1>
+
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/homepage" element={<HomePage />} />
-        <Route path="/employeepage" element={<EmployeePage />} />
+        <Route path="/employeepage/:employee" element={<EmployeePage />} />
       </Routes>
     </div>
   );
