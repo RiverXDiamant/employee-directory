@@ -5,9 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./images/darkplace-hospital.png");
+  /* background-image: url("./images/darkplace-hospital.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 code {
@@ -15,6 +15,7 @@ code {
     monospace;
 }
 
+/* Nav */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -27,4 +28,24 @@ code {
 .nav a {
   color: white;
   text-decoration: none;
+}
+
+/* Employee Directory */
+.employee-directory {
+  display: flex;
+  text-align: left;
+  border: solid red 5px;
+  height: 100%;
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-photo {
+  width: 15%;
+  border: solid orange 5px;
+  background-color: purple;
+  margin-right: 10px;
 }
