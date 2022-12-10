@@ -1,3 +1,15 @@
+// link component
+import { Link } from "react-router-dom";
+
 export default function Nav() {
-  return <h1>Nav Component</h1>;
+  return (
+    <div className="nav">
+      <Link to="/">
+        <div>Home</div>
+      </Link>
+      <Link to="/homepage">
+        <div>Employees</div>
+      </Link>
+    </div>
+  );
 }

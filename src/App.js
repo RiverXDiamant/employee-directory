@@ -12,8 +12,8 @@ export default function App() {
   // use route component to specify each route
   return (
     <div className="App">
-      <h1>Darkplace Hospital</h1>
       <Nav />
+      <h1>Darkplace Hospital</h1>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/homepage" element={<HomePage />} />
