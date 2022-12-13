@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/homepage" element={<HomePage />} />
-        <Route path="/employeepage/:employee" element={<EmployeePage />} />
+        <Route path="/employeepage/:directory" element={<EmployeePage />} />
       </Routes>
     </div>
   );
