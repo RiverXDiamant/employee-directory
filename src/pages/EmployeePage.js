@@ -1,12 +1,12 @@
-export default function EmployeePage(employee) {
-  const { name, title, number, email } = employee;
+export default function EmployeePage(directory) {
+  const { name, title, number, email } = directory;
   return (
     <>
       <h2>Employee Page</h2>
       <div className="employee-show-page">
         <div className="single-employee-info">
           <div className="employee-page-photo">
-            <img href="" alt={name} />
+            <img src="" alt={name} />
           </div>
           <span className="name">{name}</span>
           <span className="title">{title}</span>

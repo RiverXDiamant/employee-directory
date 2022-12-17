@@ -7,32 +7,93 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Nav */
+.nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  background-color: rgb(92, 86, 86);
   color: white;
+  padding: 15px;
+  font-size: 2em;
 }
 
-.App-link {
-  color: #61dafb;
+.nav a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Main Home Page */
+.main {
+  height: 100vh;
+  background-image: url("../public/images/darkplace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Employee Directory Page*/
+.employee-directory {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 5px;
+  height: 300px;
+}
+
+.employee-info {
+  display: flex;
+  margin-top: 5em;
+  flex-direction: column;
+}
+
+.employee-photo {
+  width: 15%;
+  /* border: solid rgb(163, 163, 2) 5px; */
+  border-radius: 50%;
+  /* background-color: purple; */
+  margin-right: 10px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 48%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Single Employee Page */
+
+.employee-show-page {
+  display: flex;
+  justify-content: center;
+}
+.single-employee-info {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.employee-page-photo {
+  width: 50%;
+  height: 50%;
+  border: solid orange 5px;
+  border-radius: 50%;
+  background-color: purple;
+  margin-right: 10px;
 }
